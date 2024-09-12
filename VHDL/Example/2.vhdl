@@ -1,9 +1,9 @@
-// signal
+// Signal
 signal clk : std_logic;
 signal reset : std_logic;
 signal data_out : std_logic_vector(7 downto 0);
 
-//variables:
+// Variables:
 variable temp : std_logic_vector(7 downto 0);
 begin
     if rising_edge(clk) then
@@ -11,7 +11,7 @@ begin
     end if;
 end process;
 
-//Multiplexer (MUX)
+// Multiplexer (MUX)
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
