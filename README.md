@@ -1,23 +1,49 @@
-# **Xilinx technologies** for both **FPGA Design Engineers** and **RTL Design Engineers**:
+# Heterogeneous Computing Curriculum
 
-| **Skill Set**                         | **FPGA Design Engineer (Xilinx)**                                    | **RTL Design Engineer (Xilinx)**                                      |
-|---------------------------------------|----------------------------------------------------------------------|----------------------------------------------------------------------|
-| **Hardware Description Languages (HDL)** | - Strong proficiency in **VHDL**, **Verilog**, and **SystemVerilog** for Xilinx FPGA designs. <br> - Familiarity with **Xilinx HLS (High-Level Synthesis)** for C/C++-based hardware design. | - Proficiency in **Verilog** and **SystemVerilog** for RTL coding with Xilinx tools.<br> - Expertise in using Xilinx-specific **SystemVerilog** constructs for design and verification. |
-| **Xilinx Tools**                      | - Extensive use of **Xilinx Vivado** for synthesis, place-and-route, simulation, and bitstream generation. <br> - Knowledge of **Vivado HLS** for creating high-performance algorithms on FPGA. <br> - Experience with **Vitis** and **Xilinx SDK** for embedded system design and software development. | - Use of **Xilinx Vivado** for RTL synthesis and verification.<br> - Familiarity with **Vivado Design Suite** for design and synthesis, but less focus on place-and-route compared to FPGA engineers. |
-| **Xilinx FPGA Architecture Knowledge**| - Deep understanding of **Xilinx FPGA architectures**, including **Zynq SoC**, **Zynq UltraScale+**, and **Versal Adaptive SoCs**. <br> - Experience with **LUTs**, **CLBs**, **BRAM**, **DSP slices**, and optimizing resource usage on Xilinx devices. | - Familiarity with Xilinx FPGA architecture at the RTL level, focusing on logic mapping and utilization of FPGA resources. <br> - In-depth understanding of how RTL designs are synthesized and mapped to Xilinx FPGA resources like **LUTs** and **FFs**. |
-| **Timing and Performance Optimization**| - Proficient in **static timing analysis (STA)** using Xilinx **Vivado** tools. <br> - Expertise in Xilinx-specific constraints management and achieving timing closure in high-performance designs. | - Strong in using **Vivado** for **timing analysis** and **gate-level optimization** of RTL designs.<br> - Knowledge of **clock domain crossing (CDC)** handling specific to Xilinx FPGA architecture. |
-| **Xilinx IP Cores**                   | - Extensive experience using **Xilinx IP cores** for high-speed communication, signal processing, and embedded systems (e.g., **AXI**, **PCIe**, **Ethernet**, **DDR**).<br> - Familiarity with integrating and customizing **Xilinx LogiCORE IP** for system-on-chip (SoC) designs. | - Experience with using Xilinx IP cores at the RTL level, integrating them into larger designs, but typically less focus on hardware-level IP customization. |
-| **Embedded Systems**                  | - Proficiency in **Zynq SoC** and **Zynq UltraScale+** embedded platforms, including running software on the embedded ARM cores.<br> - Experience with **MicroBlaze** soft processors in Xilinx FPGA designs, using **Vivado SDK** or **Vitis** for software development. | - Familiar with **Zynq** and **MicroBlaze** integration at the RTL level but typically focuses on logic design and less on embedded software interaction. |
-| **Simulation & Debugging**            | - Proficient in using **Vivado Simulator** for pre- and post-synthesis simulation.<br> - Strong experience with **Xilinx ILA (Integrated Logic Analyzer)** for in-system debugging and real-time hardware analysis. | - Experience with **Vivado Simulator** for verifying RTL designs before synthesis. <br> - Knowledge of **Vivado ILA** for post-synthesis logic debugging in FPGA but usually focuses on pre-synthesis verification. |
-| **Synthesis & Resource Optimization** | - Extensive experience with Xilinx **Vivado** synthesis tools, optimizing resource utilization (LUTs, BRAM, DSPs) for performance and power efficiency.<br> - Knowledge of **floorplanning** and design partitioning for optimizing Xilinx FPGAs. | - Strong proficiency in **RTL synthesis** using **Vivado**, focusing on logic mapping to FPGA resources. <br> - Experience in optimizing RTL code for efficient FPGA resource utilization in Xilinx devices. |
-| **Communication Protocols**           | - Deep understanding of **Xilinx IP for communication protocols** such as **AXI**, **PCIe**, **Ethernet**, **MIPI-CSI**, and **I2C/SPI**.<br> - Experience in integrating and implementing high-speed interfaces for Xilinx FPGAs. | - Knowledge of designing communication protocols at the RTL level (e.g., SPI, I2C), with experience integrating Xilinx communication IPs. |
-| **Power Management**                  | - Experience with **power optimization** using Xilinx tools, managing power states and optimizing power for low-power applications on Xilinx FPGAs.<br> - Knowledge of **dynamic power management** for Xilinx SoC devices. | - Familiar with power optimization at the RTL level using **clock gating** and **low-power design techniques**, but less focused on Xilinx-specific power management. |
-| **Prototyping and Deployment**        | - Experience in rapid prototyping using Xilinx **FPGA development boards** like **Zynq UltraScale+** and **Kintex Ultrascale**.<br> - Familiar with deploying real-time FPGA systems using **Xilinx Vivado** and **Vitis** tools. | - Less focused on physical prototyping but involved in verifying Xilinx-based RTL designs through simulation and synthesis. |
-| **AI and Hardware Acceleration**      | - Expertise in implementing **AI models** and **DSP algorithms** on Xilinx FPGAs for **hardware acceleration**.<br> - Experience with Xilinx's **AI Engine** and **Vitis AI** for accelerating machine learning models. | - Involved in designing **control logic** and AI accelerators at the RTL level, with some experience in mapping AI workloads to Xilinx FPGA resources. |
-| **Xilinx High-Speed IO**              | - Experience working with Xilinx's **high-speed transceivers** and **IO standards** (e.g., **GTX**, **GTH**, **GTY**) for implementing high-speed communication interfaces. | - Familiar with high-speed IO standards but less focused on direct implementation with Xilinx hardware.<br> - Typically interacts with high-speed IOs at the **protocol** level (AXI, PCIe) rather than the physical layer. |
+## Overview
+Welcome to the **Heterogeneous Computing** curriculum repository. This open-source project is designed to provide a comprehensive learning path for students and professionals looking to master heterogeneous computing systems. The curriculum covers foundational concepts, parallel programming, GPU and FPGA programming, performance optimization, AI integration, systems design, and culminates in a capstone project.
 
-### Summary:
-- **FPGA Design Engineers** working with Xilinx technologies have deep expertise in using **Vivado**, **Vitis**, and other Xilinx-specific tools. They are involved in optimizing **FPGA architecture**, integrating **Xilinx IP cores**, and implementing high-performance designs on Xilinx FPGAs such as **Zynq SoC** and **Versal**.
-- **RTL Design Engineers** using Xilinx tools focus more on **Verilog/SystemVerilog** coding, RTL **synthesis**, and **verification**. They are proficient in Xilinx **Vivado** for logic design, and while they interact with **Xilinx IP** and architecture, their role is more logic-focused than FPGA-focused.
+## Courses
+1. **[Foundations of Heterogeneous Computing](./courses/01-foundations/README.md)** (4 weeks)  
+   Establish a solid understanding of heterogeneous computing architectures and their applications.
 
-Would you like to focus more on a specific technology or skill related to Xilinx?
+2. **[Parallel Computing and Multithreading](./courses/02-parallel-computing/README.md)** (4 weeks)  
+   Learn the principles of parallel computing and develop multithreaded applications.
+
+3. **[GPU Programming and CUDA](./courses/03-gpu-programming/README.md)** (4 weeks)  
+   Master GPU programming using CUDA to accelerate compute-intensive tasks.
+
+4. **[FPGA and Reconfigurable Computing](./courses/04-fpga-reconfigurable-computing/README.md)** (4 weeks)  
+   Dive into FPGA programming and reconfigurable computing for specialized applications.
+
+5. **[Performance Optimization and Profiling](./courses/05-performance-optimization/README.md)** (3 weeks)  
+   Optimize and profile heterogeneous computing applications for maximum performance.
+
+6. **[Heterogeneous Computing in AI and Machine Learning](./courses/06-ai-ml-integration/README.md)** (3 weeks)  
+   Integrate heterogeneous computing architectures into AI and machine learning workflows.
+
+7. **[Heterogeneous Systems Design and Integration](./courses/07-systems-design/README.md)** (3 weeks)  
+   Design and integrate heterogeneous computing systems for optimal performance and scalability.
+
+8. **[Capstone Project](./courses/08-capstone-project/README.md)** (4 weeks)  
+   Apply all learned skills to develop a comprehensive heterogeneous computing project.
+
+## Getting Started
+### Requirements
+- **Hardware**: 
+  - CPU with multi-core support
+  - NVIDIA GPU with CUDA support
+  - FPGA development board (e.g., Xilinx or Intel)
+  - Development boards (e.g., Raspberry Pi)
+  
+- **Software**: 
+  - CUDA Toolkit
+  - FPGA development tools (e.g., Xilinx Vivado)
+  - Programming languages: C/C++, Python
+  - Git and GitHub account
+
+### Installation
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/heterogeneous-computing-curriculum.git
+   cd heterogeneous-computing-curriculum
